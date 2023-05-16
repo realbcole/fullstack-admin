@@ -1,6 +1,6 @@
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
-import { useMemo } from "react";
+import { useMemo, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import state from "state";
@@ -14,13 +14,16 @@ import Geography from "scenes/geography";
 import Overview from "scenes/overview";
 import Daily from "scenes/daily";
 import Monthly from "scenes/monthly";
-import Breakdown from "scenes/breakdown"
-import Admin from "scenes/admin"
-import Performance from "scenes/performance"
+import Breakdown from "scenes/breakdown";
+import Admin from "scenes/admin";
+import Performance from "scenes/performance";
 
 function App() {
   const mode = useSelector((state) => state.global.mode);
   const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
+  useEffect(() => {
+    document.title = 'ECOMVISION';
+  }, []);
   return (
     <div className="app">
       <BrowserRouter>
