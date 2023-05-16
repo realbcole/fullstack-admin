@@ -52,24 +52,24 @@ const Performance = () => {
                         border: "none",
                     },
                     "& .MuiDataGrid-cell": {
-                        borderBottom: "none"
+                        borderBottom: "none",
                     },
                     "& .MuiDataGrid-columnHeaders": {
                         backgroundColor: theme.palette.background.alt,
                         color: theme.palette.secondary[100],
-                        borderBottom: "none"
+                        borderBottom: "none",
                     },
                     "& .MuiDataGrid-virtualScroller": {
-                        backgroundColor: theme.palette.primary.light,
+                        backgroundColor: theme.palette.background.alt,
                     },
                     "& .MuiDataGrid-footerContainer": {
                         backgroundColor: theme.palette.background.alt,
                         color: theme.palette.secondary[100],
-                        borderTop: "none"
+                        borderTop: "none",
                     },
                     "& .MuiDataGrid-toolbarContainer .MuiButton-text": {
-                        color: `${theme.palette.secondary[200]} !important`
-                    }
+                        color: `${theme.palette.secondary[200]} !important`,
+                    },
                 }}
             >
                 <DataGrid
