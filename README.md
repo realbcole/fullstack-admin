@@ -1,5 +1,5 @@
 <h3 align="center">Fullstack Admin Dashboard</h3>
-
+<img src="./screenshots/dashboard.PNG" alt="Dashboard Screenshot">
 <div align="center">
   <a href="https://admin-frontend-mqei.onrender.com/">Live Demo</a>
 </div>
