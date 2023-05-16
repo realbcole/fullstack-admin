@@ -11,6 +11,9 @@
     <br> 
 </p>
 
+## NOTE
+ When accessing the backend for the first time, the data may take a minute to load. This is because the backend is deployed on Render.com so it will shut off after 15 minutes of inactivity.
+
 ## 📝 Table of Contents
 - [About](#about)
 - [Built Using](#built_using)
