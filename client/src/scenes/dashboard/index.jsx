@@ -86,14 +86,14 @@ const Dashboard = () => {
                     title="Total Customers"
                     value={data && data.totalCustomers}
                     increase="+14%"
-                    description="Since last month"
+                    description="Since last year"
                     icon={<Email sx={{ color: theme.palette.secondary[300], fontSize: "26px" }} />}
                 />
                 <StatBox
                     title="Sales Today"
                     value={data && data.todayStats.totalSales}
                     increase="+21%"
-                    description="Since last month"
+                    description="Since yesterday"
                     icon={<PointOfSale sx={{ color: theme.palette.secondary[300], fontSize: "26px" }} />}
                 />
                 <Box
@@ -116,7 +116,7 @@ const Dashboard = () => {
                     title="Yearly Sales"
                     value={data && data.yearlySalesTotal}
                     increase="+43%"
-                    description="Since last month"
+                    description="Since last year"
                     icon={<Traffic sx={{ color: theme.palette.secondary[300], fontSize: "26px" }} />}
                 />
 
@@ -168,7 +168,7 @@ const Dashboard = () => {
                     </Typography>
                     <BreakdownChart isDashboard={true} />
                     <Typography p="0 0.6rem" fontSize="0.8rem" sx={{ color: theme.palette.secondary[200] }}>
-                        Breakdown of real states and infromation via category for revenue made for this year and total sales.
+                        Breakdown of real states and information via category for revenue made for this year and total sales.
                     </Typography>
                 </Box>
             </Box>
